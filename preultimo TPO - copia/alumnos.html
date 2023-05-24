@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnos-Hipatia Instituto</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <script src="https://kit.fontawesome.com/8db5282e37.js" crossorigin="anonymous"></script>
+    <script src="js/app.js" defer></script>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/conicas.png.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body> 
+    
+        <header >
+            <a href="index.html"><img class="header-img animate__animated animate__rotateIn" src="img/Hipatia.png" alt="Instituto de enseñanza" ></a>
+   </header>
+  
+    <navbar>
+            <nav class="header-menubar">
+                <ul class="menu_items">
+                    <li> <a href="index.html">Inicio</a></li>
+                    <li class="active"> <a href="Alumnos.html">Alumnos</a></li>
+                    <li> <a href="profesionales.html">Profesionales</a></li>
+                    <li> <a href="administracion.html">Administracion</a></li>
+                    <li> <a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <span class="btn_menu">
+                <i class="fa-solid fa-bars"></i>  
+            </span>
+    </navbar>   
+
+  <main>
+   
+        <div class="maindiv">
+                <article>
+                    <div>
+                        <h3>Bienvenido/a...</h3>
+                        <p class="Apoyo">Apoyo reservados</p>
+                    </div>
+                    <table class="tbAlumnos">
+                        <tr>
+                            <th class="Coltb-alu">Fecha y hora</th>
+                            <th class="Coltb-alu">Materia</th>
+                            <th class="Coltb-alu">Ciclo</th>
+                            <th class="Coltb-alu">Profe</th>
+                            <th class="Coltb-alu">Tipo</th>
+                            <th class="Coltb-alu">Reprogramar</th>
+                            <th class="Coltb-alu">Eliminar</th>
+                        </tr>
+                        <tr>
+                            <td>24/05/2023 11:30</td>
+                            <!--td>Matemática Física, Química, Informática</td-->
+                            <td>Matemática</td>
+                            <td>Secundario 2</td>
+                            <td>Graciela Airaldi</td>
+                            <td>Presencial</td>
+                            <td>Editar</td>
+                            <td>Eliminar</td>                                
+                        </tr>
+                        <tr>
+                            <td>26/05/2023 10:00</td>
+                            <!--td>Matemática Física, Química, Informática</td-->
+                            <td>Lengua y Literatura</td>
+                            <td>Secundario 2</td>
+                            <td>Cristina Papalar</td>
+                            <td>Virtual</td>
+                            <td>Editar</td>
+                            <td>Eliminar</td>                      
+                        </tr>
+                        <tr>
+                            <td>27/05/2023 09:30</td>
+                            <!--td>Matemática Física, Química, Informática</td-->
+                            <td>Biología</td>
+                            <td>Secundario 1</td>
+                            <td>Debora Hassan</td>
+                            <td>Presencial</td>
+                            <td>Editar</td>
+                            <td>Eliminar</td>                       
+                        </tr>
+                    </table>
+
+        </div>
+    
+        <div class="container-Alum">
+            <div class="info-form">
+                <h4>Solicitar cursada</h4><br>
+            </div>
+            <form action="#" autocomplete="off">
+                <label for="materia">Seleccione materia y profesor/a:</label>
+                    <select name="materia" id="materias">
+                        <optgroup label="Matemática">
+                            <option value="Graciela Airaldi">Graciela Airaldi</option>
+                        </optgroup>
+                        <optgroup label="Lengua y Literatura">
+                            <option value="Cristina Papalar">Cristina Papalar</option>
+                        </optgroup>
+                        <optgroup label="Biología">
+                            <option value="Debora Hassan">Debora Hassan</option>
+                        </optgroup>
+                    </select>
+                    <input type="text" name="materia"
+                    placeholder="Ingresar materia" class="campo" required>
+                    <input type="text" name="ciclo"
+                    placeholder="Ingresar ciclo" class="campo" required>                
+                    <input type="text" name="profesor"
+                    placeholder="Ingresar profesor" class="campo" required>
+
+                    <select name="tipo" id="tipos">
+                        <optgroup label="Primario">
+                            <option value="Unico">Unico</option>
+                        </optgroup>
+                        <optgroup label="Secundario">
+                            <option value="Primero">Primer año</option>
+                            <option value="Segundo">Segundo año</option>
+                            <option value="Tercero">Tercer año</option>
+                            <option value="Cuarto">Cuarto año</option>
+                            <option value="Quinto">Quinto año</option>
+                            <option value="Sexto">Sexto año</option>                                                                                    
+                        </optgroup>
+                        <optgroup label="Universitario">
+                            <option value="General">General</option>
+                        </optgroup>
+                    </select>
+
+                    <input type="text" name="tipo"
+                    placeholder="Ingresar tipo" class="campo" required>
+                    <a href="#"> <i class="fa fa-calendar">
+                    </i> Calendario</a>
+            </form>
+            <br>
+            <div class="container-Alum" >
+                <button class="btn-Apoyo">Solicitar Apoyo</button>   
+            </div>
+        </div>   
+    </div>
+           
+</main>
+                    
+        
+    
+    <footer class="pie-pagina">
+        <!--Agregado por Guillermo 30/04/2023-->
+         <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                      <!--  <img src="imagen/isologo-instituto.svg" alt="Logo de Instituto" -->
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h3>SOBRE NOSOTROS</h3>
+                <p>"No queremos creer, queremos saber". (Carl Sagan)</p>
+             </div>
+            <div class="box">
+                <h3>SEGUINOS</h3>
+                <div class="red-social">
+                    <a href="#" class="fa fa-whatsapp"></a>
+                    <a href="https://www.facebook.com/HipatiaClasesVirtuales/" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/clasesparticularesbelgrano/" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/InstitutoHipatia/" class="fa fa-twitter"></a>
+                </div>
+            </div>
+          </div>
+        <div class="grupo-2">
+            <a href="#Top">Ir arriba</a><br>
+            <small>copyright &copy;2023 <b>Instituto Hipatía</b> - Todos los Derechos Reservados</small><br>
+            <small>designed by <span><b>quartet</b></span></small><XX-larger>4</XX-larger>
+        </div>
+        <!--Fin de agregado por Guillermo 30/04/2023-->
+    
+</footer>
+
+</body>
+</html>
